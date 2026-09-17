@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is our 263 food delivery form</h1>
+
+    <!-- makin forms --> <!-- "get" sends data across the url. "post" sends the daata on a special header with the http request (used for sensitive info) -->
+     <form action="" method="post">
+        <label for="fullmane">Full Name: </label>
+        <input type="text" id="fullname" name="fullname"> <!-- name will show when form is submitted -->
+        <br>
+
+        <label for="special">Special Instructions: </label>
+        <textarea id="special" name="special"></textarea>
+        <br>
+
+        <p>Pickup or Delivery?</p>
+        <input type="radio" id="delivery1" name="delivery" value="pickup"> <!-- name is what links them together -->
+        <label for="delivery1">Pickup</label>
+        <input type="radio" id="delivery2" name="delivery" value="delivery">
+        <label for="delivery2">Delivery</label>
+        <br>
+
+        <input type="checkbox" id="utensils" name="utensils" value="no utensils"> <!-- unline radio, checkboxes can be unselected -->
+        <label for="utensils">No Utensils?</label>
+        <br>
+
+        <label for="food">What Food?</label>
+        <select name="food" id="food">
+            <option value="Soup">Soup</option>
+            <option value="Pizza">Pizza</option>
+            <option value="Sandwich">Sandwich</option>
+            <option value="Rice Bowl">Rice Bowl</option>
+        </select>
+        <br>
+        
+        <input type="submit" value="Send Order">
+
+
+     </form>
+</body>
+</html>
