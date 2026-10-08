@@ -1,0 +1,24 @@
+h1 {color:cornflowerblue;}
+p {
+    font-size: 2em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    text-decoration: line-through;
+} /* my paragraph text will be double size*/
+
+p, h2 {color:forestgreen;} /*this is a grouped selector*/
+
+p a {color:goldenrod;} /*decendant selector, changing color of a tags inside of p tags*/
+
+#welcome {
+    color:blueviolet;
+    text-decoration: none;
+} /* id selector only styles one element*/
+
+.doublesize {font-size:2em} /*class selector, make a custon=m group pf thigns to be effected*/
+
+/* this is a single line comment :3 */
+/* multi
+line
+comment 
+:333 */
