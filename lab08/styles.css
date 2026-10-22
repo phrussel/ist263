@@ -33,14 +33,14 @@ nav a:hover {background-color: #F7F1DE;}
     border-radius: 1em; 
     margin: 10px;
 }
-.topbox div {padding: 20px;}
-.botbox div {padding: 20px;}
+.topbox div {padding: 50px 100px 50px 100px;}
+.botbox div {padding: 50px 100px 50px 100px;}
 .adress, .email, .form, .map {margin: 20px;}
 .adress {flex: 1;}
 .email {flex: 3;}
 .form {
     flex: 1;
-    
+    padding
 }
 .map {flex: 1;}
 
