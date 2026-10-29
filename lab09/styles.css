@@ -1,0 +1,62 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #F7F1DE;
+    color: #000000;
+}
+
+h1, h2 {
+    color: #4E220F;
+    margin: 20px;
+}
+
+link {color: #9D6638;}
+
+nav {
+    background-color: #B0BA99;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+nav a {color: #4E220F;}
+nav a:hover {background-color: #F7F1DE;}
+
+.rfloat {float: right;}
+
+.topbox {
+    display: flex;
+    background-color: #9D6638;
+    border-radius: 1em; 
+    margin: 10px;
+    flex-wrap: wrap;
+}
+.botbox {
+    display: flex;
+    background-color: #B0BA99;
+    border-radius: 1em; 
+    margin: 10px;
+    flex-wrap: wrap;
+}
+.topbox div {padding: 50px 100px 50px 100px;}
+.botbox div {padding: 50px 100px 50px 100px;}
+.adress, .email, .form, .map {margin: 20px;}
+.adress {flex: 1;}
+.email {flex: 3;}
+.form {
+    flex: 1;
+}
+.map {
+    flex: 1;
+}
+
+.banner {max-width: 100%;}
+
+@media only screen and (max-width: 800px){
+    nav a {
+        display:block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    nav span {
+        display: none;
+    }
+}
+
