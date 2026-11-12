@@ -86,7 +86,7 @@ main div {
 }
 #title {
     text-align: center;
-}
+} /* Does this work?*/
 #introtext {
     max-width: 600px;
 }
@@ -96,7 +96,6 @@ main div {
     border: none;
     margin: none;
     padding: none;
-
 }
 
 
