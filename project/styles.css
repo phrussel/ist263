@@ -84,6 +84,21 @@ main div {
     border: 3px solid #000000;
     padding: 2em;
 }
+#title {
+    text-align: center;
+}
+#introtext {
+    max-width: 600px;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    border: none;
+    margin: none;
+    padding: none;
+
+}
+
 
 footer {
     background-color: #ffffff;
