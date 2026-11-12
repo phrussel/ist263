@@ -1,0 +1,149 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: url(../images/skelecursor.png), auto;
+}
+a {
+    color: #a81616
+}
+a:hover {
+    color: #ed8080
+}
+
+
+.index {
+    background-image: url(../images/ocean.jpg);
+    background-color: #5e8fb7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: ;
+    
+}
+.characterguide {
+    background-image: url(../images/wood.jpg);
+    background-color: #1c1c1a;
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+}
+.story {
+    background-image: url(../images/paper.jpg);
+    background-color: #c6ad8f;
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+}
+
+audio {
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+}
+
+header {
+    display:flex;
+    justify-content: center;
+    margin: 1em 10em 0em 10em;
+}
+header img {
+    max-width: 100%;
+}
+
+.mainnav {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    margin: 0em 10em 0em 10em;
+}
+
+.burger {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    padding: 1em;
+}
+.burgerbuttons {
+    display:flex;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    margin: 0em 10em 0em 10em;
+}
+main nav {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    padding: 1em;
+    min-width: 150px;
+}
+main div {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    padding: 2em;
+}
+
+footer {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    margin: 0em 10em 0em 10em;
+    padding: 2em;
+}
+.footflex {
+    display: flex;
+    flex-wrap: wrap;
+}
+footer div {
+    flex: 1;
+    padding: 20px
+}
+footer img {
+    min-width: 200px;
+    max-width: 40%;
+}
+
+
+
+.icon {
+    max-width: 100px;
+}
+.charflex {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+
+@media only screen and (max-width: 900px){
+    header {
+        margin: auto;
+    }
+    header img {
+        max-width: 300px;
+    }
+
+    .mainnav {
+        margin: auto;
+    }
+
+    main nav {
+        display: none;
+    }
+    main {
+        margin: auto;
+    }
+    footer {
+        margin: auto
+    }
+
+
+}
+@media only screen and (min-width: 901px){
+    .burger {
+        display: none;
+    }
+}
+
+
+

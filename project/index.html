@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Curse of Davey Jones</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function showNav() {
+            document.getElementById("navitems").style.display = "block";
+        }
+        function hideNav() {
+            document.getElementById("navitems").style.display = "none";
+        }
+    </script>
 </head>
-<body>
-    <audio controls muted autoplay>
+<body class="index">
+    <audio controls muted autoplay loop>
         <source src="../sounds/pirate-adventure-loop.mp3" type="audio/mp3">
     </audio>
 
@@ -16,19 +25,45 @@
         </a>
     </header>
 
-    <nav>
+    <nav class="mainnav">
         <p><a href="index.html">Home</a> | <a href="characterguide.html">Character Guide</a> | <a href="story.html">The Story So Far</a></p>
+    </nav>
+
+    <nav class="burger">
+        <div class="burgerbuttons">
+            <div>
+                <img id="burgericon" onclick=showNav(); src="../images/burger.png" alt="hamburger icon">
+            </div>
+            <div>
+                <h2>On this page:</h2>
+            </div>
+            <div id="close icon">
+                <img id="closeicon" onclick=hideNav(); src="../images/close.png" alt="close icon">
+            </div>
+
+        </div>
+        
+        <div id="navitems">
+            <a href="#title">Welcome to the Curse of Davey Jones!</a><br>
+            <hr>
+            <a href="#setting">The Setting</a><br>
+            <hr>
+            <a href="#gamemech">Game Mechanics</a><br>
+            <hr>
+            <a href="#acknowledgements">Acknowledgements</a><br>
+        </div>
     </nav>
 
     <main> <!-- makes a flexbox -->
         <nav> <!-- box w menu in it -->
             <h2>On this page:</h2>
-                <ul>
-                    <li><a href="#title">Welcome to the Curse of Davey Jones!</a></li>
-                    <li><a href="#setting">The Setting</a></li>
-                    <li><a href="#gamemech">Game Mechanics</a></li>
-                    <li><a href="#acknowledgements">Acknowledgements</a></li>
-                </ul>
+                <a href="#title">Welcome to the Curse of Davey Jones!</a><br>
+                <hr>
+                <a href="#setting">The Setting</a><br>
+                <hr>
+                <a href="#gamemech">Game Mechanics</a><br>
+                <hr>
+                <a href="#acknowledgements">Acknowledgements</a><br>
         </nav>
         <div> <!-- box w content in it -->
             <h1 id="title">Welcome to the Curse of Davey Jones!</h1>
@@ -45,21 +80,28 @@
             <p>We use the dice to add an element of uncertainty to the story as we play. Sometimes failing at an action leads to a much more interesting story! However, we tend to prioritize the story and our fun over the game mechanics, so if someone has a really fun idea of something they want to do, usually we are willing to “break the rules” of our own game. In some ttrpg communities, this is referred to as the “Rule of Cool”.</p>
 
             <h2 id="acknowledgements">Acknowledgements</h2>
-            <p>At the end of the day, this story was created collaboratively. Nothing that you see here would be possible without the help of my wonderful friends Jerame, Mo, Shawn, Emma, and Gabe. I would like to especially highlight Jerame, who has been such an amazing game master and created an awesome world and characters for the rest of us to mess around in and miss all his plot hints in.</p>
+            <p>At the end of the day, this story was created collaboratively. Nothing that you see here would be possible without the help of my wonderful friends Jerame, Mo, Shawn, Emma, and Gabe. I would like to especially highlight Jerame, who has been such an amazing game master and created an awesome world and characters for the rest of us to mess around and miss all his plot hints in.</p>
             <p>Both Mo and Jerame have contributed to the character art on this site.</p>
         </div>
     </main>
 
     <footer>
-        <p>
-            <a href="index.html">Home</a><br>
-            <a href="characterguide.html">Character Guide</a><br>
-            <a href="story.html">The Story So Far</a>
-        </p>
-        <a href="index.html">
-            <img src="../images/curse_of_DJ_icon.png" alt="A playful, pirate-themed logo with the text 'One Piece: The Curse of Davey Jones'">
-        </a>
-        <p><a href="#logo">Back to Top</a></p>
+        <section class="footflex">
+            <div>
+                <a href="index.html">
+                    <img src="../images/curse_of_DJ_icon.png" alt="A playful, pirate-themed logo with the text 'One Piece: The Curse of Davey Jones'">
+                </a>   
+            </div>
+            <div>
+                <p>
+                    <a href="index.html">Home</a><br>
+                    <a href="characterguide.html">Character Guide</a><br>
+                    <a href="story.html">The Story So Far</a><br>
+                    <p><a href="#logo">Back to Top</a></p>
+                </p>
+            </div>
+        </section>
+        
         <hr>
         <p>&copy;2026</p>
     </footer>
