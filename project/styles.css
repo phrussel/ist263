@@ -2,6 +2,13 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     cursor: url(../images/skelecursor.png), auto;
 }
+h1, h2 {
+    font-family: "Trade Winds", system-ui;
+    font-style: normal;
+}
+.contentbox h2 {
+    margin-top: 50px;
+}
 a {
     color: #a81616
 }
@@ -84,7 +91,7 @@ main div {
     border: 3px solid #000000;
     padding: 2em;
 }
-#title {
+.title {
     text-align: center;
 } /* Does this work?*/
 #introtext {
@@ -126,10 +133,19 @@ footer img {
 .charflex {
     display:flex;
     flex-wrap: wrap;
+    border: none;
+    padding: 0px;
+    margin-bottom: 100px;
+}
+.chartext {
+    flex: 1;
+}
+.charimg {
+    flex: 2;
+    text-align: center;
 }
 
-
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 1080px){
     header {
         margin: auto;
     }
@@ -153,7 +169,7 @@ footer img {
 
 
 }
-@media only screen and (min-width: 901px){
+@media only screen and (min-width: 1081px){
     .burger {
         display: none;
     }
